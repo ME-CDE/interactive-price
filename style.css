@@ -8,6 +8,7 @@
 body{
     background-color: hsl(230, 100%, 99%);
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 .background{
     position: absolute;
