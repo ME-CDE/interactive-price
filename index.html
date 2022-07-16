@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="intro">
+            <h2>Simple, traffic-based pricing</h2>
+            <p>Sign-up for our 30-day trial. No credit card required. </p>
+        </div>
+        <div class="price-container">
+            <div class="views-and-price">
+                <h4><span id="price">10K</span> Pageviews</h4>
+                <div class="price" id="desktop-price">
+                    <h1>$8.00</h1>
+                    <p>/year</p>
+                </div>
+            </div>
+            <input type="range" name="" class="slider" id="myrange" min="10" max="1000" value="10"
+                oninput="inputchange()">
+                <div class="price" id="mobile">
+                    <h1>$8.00</h1>
+                    <p>/year</p>
+                </div>
+            <div class="toggle-div">
+                <p>Monthly Billing</p>
+                <div class="toggle-button" onclick="move()"></div>
+                <p>Yearly Billing <small class="desktop-small">25% discount</small><small class="mobile-small">-25%</small> </p>
+            </div>
+            <div class="features-container">
+                <div class="features">
+                    <ul>
+                        <li>
+                            <img src="./images/icon-check.svg" alt="">
+                            <p>Unlimited websites</p>
+                        </li>
+                        <li>
+                            <img src="./images/icon-check.svg" alt="">
+                            <p>100% data ownership</p>
+                        </li>
+                        <li>
+                            <img src="./images/icon-check.svg" alt="">
+                            <p>Email reports</p>
+                        </li>
+                    </ul>
+                    <button>Start my trial</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
